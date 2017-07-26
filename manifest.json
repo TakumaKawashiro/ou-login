@@ -1,0 +1,14 @@
+{
+"manifest_version": 2,
+"name": "阪大ログイン補助 by Takuma.K",
+"short_name": "TK-OUログイン補助",
+"version": "0.0.4.0",
+"description": "KOAN, CLE, マイハンダイなどのログイン時にIDとパスワードを保存できるようにします.",
+
+
+"content_scripts": [{
+  "matches": ["https://ou-idp.auth.osaka-u.ac.jp/*"],
+  "js": ["jquery.min.js", "event/mainScript.js"],
+  "css": ["event/main.css"]
+}]
+}

@@ -1,0 +1,86 @@
+html {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 400px;
+  min-height: 400px;
+  box-sizing: border-box;
+  background-image: url("bgimg.png");
+}
+
+#tk-ouLogin {
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,.25);
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 3px rgba(0,0,0,.15);
+  background: #ffffff;
+  width: 400px;
+  height: 400px;
+
+  position: fixed;
+  left: calc(50vw - 200px);
+  top: calc(50vh - 200px);
+}
+
+#tk-ouLogin-title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  margin-bottom: 63px;
+}
+
+.tk-ouLogin-form-inputBox {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.tk-ouLogin-form-inputBox span {
+  font-size: 18px;
+  height: 18px;
+}
+
+.tk-ouLogin-form-inputBox input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  margin-top: 5px;
+  height: 25px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0,0,0,.25);
+}
+
+#tk-ouLogin-form-submitBox {
+  margin-top: 63px;
+  width: 100%;
+}
+
+#tk-ouLogin-form-submit {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 200px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0px 84px 0px 84px;
+  background: #1DE9B6;
+  color: #fff;
+  border-radius: 4px;
+}
