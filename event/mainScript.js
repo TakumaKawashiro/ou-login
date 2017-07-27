@@ -6,6 +6,7 @@ $(function() {
     $('body').hide();
     $('html').append("<div id='tk-ouLogin'><div id='tk-ouLogin-title'>大阪大学ITサービスにログイン</div><form id='tk-ouLogin-form' name='tk-ouLogin-form'><div class='tk-ouLogin-form-inputBox'><span>大阪大学個人ID: </span><br><input id='tk-ouLogin-form-id' type='text'></div><div class='tk-ouLogin-form-inputBox'><span>パスワード: </span><br><input id='tk-ouLogin-form-pass' type='password'></div><div id='tk-ouLogin-form-submitBox'><input id='tk-ouLogin-form-submit' type='submit' value='登録/ログイン'></div></form></div>");
     $('title').text("阪大ITサービス - ログイン by Takuma.K");
+    $('head').append("<link rel='shortcut icon' href='https://takumakawashiro.github.io/ou-login/icon/icon.ico' type='image/vnd.microsoft.icon'>");
     setTimeout(function(){activate();}, 1);
   }
 });
