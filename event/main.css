@@ -6,10 +6,14 @@ html {
   min-width: 400px;
   min-height: 400px;
   box-sizing: border-box;
-  background-image: url("bgimg.png");
+  background-image: url("https://takumakawashiro.github.io/ou-login/event/bgimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #tk-ouLogin {
+  opacity: 0;
+
   box-sizing: border-box;
   padding: 16px;
   border: 1px solid rgba(0,0,0,.25);
@@ -29,6 +33,9 @@ html {
   line-height: 20px;
   font-size: 20px;
   margin-bottom: 63px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
 }
 
 .tk-ouLogin-form-inputBox {
@@ -39,6 +46,9 @@ html {
 .tk-ouLogin-form-inputBox span {
   font-size: 18px;
   height: 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
 }
 
 .tk-ouLogin-form-inputBox input {
@@ -78,9 +88,13 @@ html {
   width: 200px;
   height: 28px;
   line-height: 28px;
+  font-size: 18px;
   text-align: center;
   margin: 0px 84px 0px 84px;
   background: #1DE9B6;
   color: #fff;
   border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
 }
