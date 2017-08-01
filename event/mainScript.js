@@ -4,9 +4,9 @@ $(function() {
   }
   else {
     $('body').hide();
-    $('html').append("<div id='tk-ouLogin'><div id='tk-ouLogin-title'>大阪大学ITサービスにログイン</div><form id='tk-ouLogin-form' name='tk-ouLogin-form'><div class='tk-ouLogin-form-inputBox'><span>大阪大学個人ID: </span><br><input id='tk-ouLogin-form-id' type='text'></div><div class='tk-ouLogin-form-inputBox'><span>パスワード: </span><br><input id='tk-ouLogin-form-pass' type='password'></div><div id='tk-ouLogin-form-submitBox'><input id='tk-ouLogin-form-submit' type='submit' value='登録/ログイン'></div></form></div>");
+    $('html').append("<div id='tk-ouLogin'><div id='tk-ouLogin-title'>大阪大学ITサービスにログイン</div><form id='tk-ouLogin-form' name='tk-ouLogin-form'><div class='tk-ouLogin-form-inputBox'><span>大阪大学個人ID: </span><br><input id='tk-ouLogin-form-id' type='text'></div><div class='tk-ouLogin-form-inputBox'><span>パスワード: </span><br><input id='tk-ouLogin-form-pass' type='password'></div><div id='tk-ouLogin-form-submitBox'><input id='tk-ouLogin-form-submit' type='submit' value='登録/ログイン'></div></form></div><div id='tk-ouLogin-copy'>Created by <a style='text-decoration:none;text-decoration:underline; color: #999;' href='https://twitter.com/takumanitoriu' target='_blank'>Takuma.K</a></div>");
     $('title').text("阪大ITサービス - ログイン by Takuma.K");
-    $('head').append("<link rel='shortcut icon' href='https://takumakawashiro.github.io/ou-login/icon/icon.ico' type='image/vnd.microsoft.icon'>");
+    $('head').append("<link rel='shortcut icon' href='https://takumakawashiro.github.io/ou-login/icon/icon64.png' type='image/png'>");
     setTimeout(function(){activate();}, 1);
   }
 });
@@ -16,7 +16,7 @@ function activate() {
     opacity: 1
   }, {
     duration: 250
-  });},499);
+  });},249);
   $('#tk-ouLogin-form-submit').click(function() {
     if($('#tk-ouLogin-form-id').css("background-color")=="rgb(250, 255, 189)") {
       $('#USER_ID').val($('#tk-ouLogin-form-id').val());
@@ -29,6 +29,8 @@ function activate() {
     }
   });
   setInterval(function() {
+    $('html').focus();
+    console.log("f");
     if($('#tk-ouLogin-form-id').css("background-color")=="rgb(250, 255, 189)"&&$('#tk-ouLogin-form-pass').val()) {
       $('#tk-ouLogin-form-submit').click();
     }
